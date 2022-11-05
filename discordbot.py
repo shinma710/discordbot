@@ -20,7 +20,7 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    
+
 # チャンネル入退室時の通知処理
 @client.event
 async def on_voice_state_update(member, before, after):
