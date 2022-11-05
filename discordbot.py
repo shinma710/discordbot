@@ -21,7 +21,7 @@ async def ping(ctx):
     await ctx.send('pong')
 
 # チャンネル入退室時の通知処理
-@client.event
+@bot.event
 async def on_voice_state_update(member, before, after):
 
     if member.guild.id == 825601093802655775 and (before.channel != after.channel):
